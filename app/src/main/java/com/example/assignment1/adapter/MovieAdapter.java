@@ -69,8 +69,7 @@ public class MovieAdapter extends BaseAdapter {
         TextView movieRating;
         TextView movieDescription;
         ImageView movieImage;
-        private Integer[] movieImg = {R.drawable.movie1,R.drawable.movie2,R.drawable.movie3,R.drawable.movie4,R.drawable.movie5,R.drawable.movie6,R.drawable.movie7,R.drawable.movie8,R.drawable.movie9,R.drawable.movie10};
-
+        private Integer[] movieImg = {R.drawable.movie1,R.drawable.movie2,R.drawable.movie3,R.drawable.movie4,R.drawable.movie5,R.drawable.movie6,R.drawable.movie7,R.drawable.movie8,R.drawable.movie9};
 
         public ViewHolder(View view)
         {
