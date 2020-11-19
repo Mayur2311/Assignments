@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.assignment1.R;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 public class MovieAdapter extends BaseAdapter {
 
     ArrayList<Movie> movie;
+    TextView title, ratings, description;
+    ImageView imageView;
 
     public MovieAdapter(ArrayList<Movie> movie) {
         this.movie = movie;
@@ -54,7 +57,7 @@ public class MovieAdapter extends BaseAdapter {
         vh.movieTitle.setText(movie.getMovie_title());
         vh.movieDescription.setText(movie.getDescription());
         vh.movieRating.setText(movie.getRatings());
-        //---Image is remaining
+        vh.movieImage.setImageResource(position);
 
         return convertView;
 
@@ -65,7 +68,9 @@ public class MovieAdapter extends BaseAdapter {
         TextView movieTitle;
         TextView movieRating;
         TextView movieDescription;
-        TextView movieImage;
+        ImageView movieImage;
+        private Integer[] movieImg = {R.drawable.movie1,R.drawable.movie2,R.drawable.movie3,R.drawable.movie4,R.drawable.movie5,R.drawable.movie6,R.drawable.movie7,R.drawable.movie8,R.drawable.movie9,R.drawable.movie10};
+
 
         public ViewHolder(View view)
         {
