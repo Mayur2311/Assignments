@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<Movie> getMovie(){
         ArrayList<Movie> movie = new ArrayList<>();
-        movie.add(0,"Race");
-        
+      //  movie.add(0,"Race");
+
         return movie;
     }
     protected void onCreate(Bundle savedInstanceState) {
